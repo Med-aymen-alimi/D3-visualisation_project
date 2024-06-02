@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Pie Chart by Classification</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        .arc path {
+            stroke: #fff;
+        }
+        .label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Recalls by Classification</h2>
+    <div>
+        <label for="product-type-select">Select Product Type:</label>
+        <select id="product-type-select"></select>
+    </div>
+    <svg id="pie-chart" width="960" height="500"></svg>
+    <script src="code.js" defer></script>
+</body>
+</html>

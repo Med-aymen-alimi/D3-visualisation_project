@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Column Chart by State</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <style>
+        .bar {
+            fill: steelblue;
+        }
+        .bar:hover {
+            fill: orange;
+        }
+        .axis-label {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Recalls by State</h2>
+    <div>
+        <label for="classification-select">Select Classification:</label>
+        <select id="classification-select">
+            <option value="Class I">Class I</option>
+            <option value="Class II" selected>Class II</option>
+            <option value="Class III">Class III</option>
+        </select>
+    </div>
+    <svg id="column-chart" width="960" height="500"></svg>
+    <script src="code.js" defer></script>
+</body>
+</html>
